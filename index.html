@@ -1,20 +1,53 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> time for gift </title>
+    <title>Time For Gift</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <main class="question-screen">
-    <h1> في هدية هنا عشانك</h1>
-<p> بس قبل مانفتحها .... </p>  
-<h2>؟ هل انت الشخص المقصود بالهدية</h2>
-<div class="answer-buttons">
-    <button id="yesBtn"> ايوا انا</button>
-    <button id="noBtn"> لا مو انا</button>
-</div>
-</main>
+
+    <main class="gift-container">
+
+        <!-- الشاشة الأولى -->
+        <section class="step active" id="step1">
+            <h1>في هدية هنا عشانك</h1>
+
+            <button class="next-btn" id="next1">
+                يلااا نشوفها؟            </button>
+        </section>
+
+
+        <!-- الشاشة الثانية -->
+        <section class="step" id="step2">
+            <p>بس قبل ما نفتحها...</p>
+
+            <button class="next-btn" id="next2">
+                تعال هنا
+            </button>
+        </section>
+
+
+        <!-- الشاشة الثالثة -->
+        <section class="step" id="step3">
+
+            <h2>هل أنت الشخص المقصود بالهدية؟</h2>
+
+            <div class="answer-buttons">
+                <button id="yesBtn">ايوه أنا</button>
+                <button id="noBtn">لا مو أنا</button>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>

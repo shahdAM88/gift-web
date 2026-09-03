@@ -1,22 +1,105 @@
 
-* {
-    margin : 0;
-    padding : 0;
+ * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
+
 body {
     min-height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(219, 124, 8);
+    background-color: #E8A09A;
+
     display: flex;
     justify-content: center;
     align-items: center;
 }
-  .question-screen {
-    width:90%;
+
+/* الحاوية الرئيسية */
+.gift-container {
+    width: 90%;
     max-width: 600px;
     padding: 40px;
+
     text-align: center;
-    background-color: aliceblue;
-    border-radius: 20px;
+
+    background-color: #FFF8ED;
+    border-radius: 24px;
+
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
+
+/* نخفي كل الشاشات */
+.step {
+    display: none;
+}
+
+/* نظهر الشاشة الحالية فقط */
+.step.active {
+    display: block;
+}
+
+/* العنوان الرئيسي */
+.gift-container h1 {
+    font-size: 36px;
+    color: #7B2639;
+    margin-bottom: 30px;
+}
+
+/* النص */
+.gift-container p {
+    font-size: 20px;
+    color: #6B6262;
+    margin-bottom: 30px;
+}
+
+/* السؤال */
+.gift-container h2 {
+    font-size: 24px;
+    color: #7B2639;
+    margin-bottom: 30px;
+}
+
+/* زر التالي */
+.next-btn {
+    padding: 12px 28px;
+
+    border: none;
+    border-radius: 12px;
+
+    background-color: #7B2639;
+    color: white;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* حاوية أزرار السؤال */
+.answer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* شكل أزرار السؤال */
+.answer-buttons button {
+    padding: 12px 24px;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* زر نعم */
+#yesBtn {
+    background-color: #7B2639;
+    color: white;
+}
+
+/* زر لا - نخليه رمادي مثل ما عجبك */
+#noBtn {
+    background-color: #E8E8E8;
+    color: #333333;
 }
