@@ -103,3 +103,6 @@ body {
     background-color: #E8E8E8;
     color: #333333;
 }
+.answer-buttons button:hover {
+    transform: translateY(-3px);
+}
