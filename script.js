@@ -15,3 +15,21 @@ next2.addEventListener("click", function () {
     step3.classList.add("active");
 }
 )
+const noBtn = document.getElementById("noBtn");
+const crySticker = document.getElementById("crySticker");
+const yesBtn = document.getElementById("yesBtn");
+const yesWrapper = document.querySelector(".yes-wrapper");
+
+let noClicks = 0;
+
+noBtn.addEventListener("click", function () {
+    noClicks++;
+
+    crySticker.style.display = "block";
+
+    yesWrapper.style.transform =
+        `scale(${1 + noClicks * 0.15})`;
+
+    noBtn.style.transform =
+        `scale(${Math.max(0.4, 1 - noClicks * 0.10)})`;
+});

@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Time For Gift</title>
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Gift Web</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,37 +18,73 @@
 
         <!-- الشاشة الأولى -->
         <section class="step active" id="step1">
+
             <h1>في هدية هنا عشانك</h1>
 
             <button class="next-btn" id="next1">
-                يلااا نشوفها؟            </button>
+                يلاا تشوفيها؟
+            </button>
+
         </section>
 
 
         <!-- الشاشة الثانية -->
         <section class="step" id="step2">
-            <p class="suspense-text">بس قبل ما نفتحها...</p>
-            <h2 class="suspense-title" >لازم نتأكد من شي</h2>
+
+            <p class="suspense-text">
+                بس قبل ما نفتحها...
+            </p>
+
+            <h2 class="suspense-title">
+                لازم نتأكد من شي
+            </h2>
 
             <button class="next-btn" id="next2">
-               يلااا بسرعههه
+                يلاا بسرعههه
             </button>
+
         </section>
 
 
         <!-- الشاشة الثالثة -->
         <section class="step" id="step3">
 
-            <h2>هل أنت الشخص المقصود بالهدية؟</h2>
+            <h2>
+                هل أنت الشخص المقصود بالهدية؟
+            </h2>
 
-            <div class="answer-buttons">
-                <button id="yesBtn">ايوه أنا</button>
-                <button id="noBtn">لا مو أنا</button>
+            <div class="answer-area">
+
+                <div class="answer-buttons">
+
+                    <!-- زر نعم + الجيف -->
+                    <div class="yes-wrapper">
+
+                        <img
+                            id="crySticker"
+                            src="assets/cry1.gif"
+                            alt="ستيكر يبكي"
+                        >
+
+                        <button id="yesBtn">
+                            ايوه أنا
+                        </button>
+
+                    </div>
+
+                    <!-- زر لا -->
+                    <button id="noBtn">
+                        لا مو أنا
+                    </button>
+
+                </div>
+
             </div>
 
         </section>
 
     </main>
+
 
     <script src="script.js"></script>
 
