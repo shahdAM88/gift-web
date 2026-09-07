@@ -20,6 +20,9 @@ const waxSeal = document.getElementById("waxSeal");
 const songGift = document.getElementById("songGift");
 const songPage = document.getElementById("songPage");
 const backFromSong = document.getElementById("backFromSong");
+const playSong = document.getElementById("playSong");
+const songAudio = document.getElementById("songAudio");
+const record = document.getElementById("record");
 let noClicks = 0;
 
 
@@ -88,4 +91,24 @@ backToGifts.addEventListener("click", function () {
 // فتح الرسالة عند الضغط على الختم
 waxSeal.addEventListener("click", function () {
     foldedLetter.classList.add("open");
+});
+songGift.addEventListener("click", function () {
+    step4.classList.remove("active");
+    songPage.classList.add("active");
+});
+
+backFromSong.addEventListener("click", function () {
+    songPage.classList.remove("active");
+    step4.classList.add("active");
+});
+playSong.addEventListener("click", function () {
+    if (songAudio.paused) {
+        songAudio.play();
+        record.classList.add("spinning");
+        playSong.textContent = "⏸";
+    } else {
+        songAudio.pause();
+        record.classList.remove("spinning");
+        playSong.textContent = "▶";
+    }
 });

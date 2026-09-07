@@ -121,13 +121,36 @@
 
     <p>هذي الأغنية اخترتها عشانك 🤍</p>
 
-    <audio controls>
-        <source src="assets/song1.mp3" type="audio/mpeg">
-    </audio>
+    <div class="record-player">
 
-    <button id="backFromSong">
-        ارجعي للهدايا
-    </button>
+        <div class="record" id="record">
+            <div class="record-center"></div>
+        </div>
+
+        <button id="playSong">▶</button>
+
+        <audio id="songAudio">
+            <source src="assets/song1.mp3" type="audio/mpeg">
+        </audio>
+        <div class="player-details">
+    <div class="mini-buttons">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="mini-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+
+    </div>
+<button id="backFromSong" aria-label="ارجعي للهدايا">
+    <span>↩</span>
+</button>
+
+</section>
 
 </section>
 <section class="step" id="letterPage">
