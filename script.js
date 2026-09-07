@@ -19,7 +19,7 @@ const scrollLetter = document.getElementById("scrollLetter");
 const waxSeal = document.getElementById("waxSeal");
 const songGift = document.getElementById("songGift");
 const songPage = document.getElementById("songPage");
-const bachFromSong = document.getElementById("backFromSong");
+const backFromSong = document.getElementById("backFromSong");
 let noClicks = 0;
 
 
