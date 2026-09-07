@@ -9,9 +9,14 @@ const noBtn = document.getElementById("noBtn");
 const yesWrapper = document.querySelector(".yes-wrapper");
 const crySticker = document.getElementById("crySticker");
 const questionText = document.getElementById("questionText");
+const secondSticker = document.getElementById("secondSticker");
 const yesBtn = document.getElementById("yesBtn");
 const step4 = document.getElementById("step4");
-
+const letterGift = document.getElementById("letterGift");
+const foldedLetter = document.getElementById("foldedLetter");
+const backToGifts = document.getElementById("backToGifts");
+const scrollLetter = document.getElementById("scrollLetter");
+const waxSeal = document.getElementById("waxSeal");
 let noClicks = 0;
 
 
@@ -33,6 +38,8 @@ next2.addEventListener("click", function () {
 noBtn.addEventListener("click", function () {
 
     noClicks++;
+    secondSticker.style.display="none";
+
 
     // تغيير السؤال
     if (noClicks === 1) {
@@ -59,6 +66,23 @@ noBtn.addEventListener("click", function () {
 });
 // عند الضغط على زر "ايوه أنا"
 yesBtn.addEventListener("click", function () {
+    secondSticker.style.display="none";
     step3.classList.remove("active");
     step4.classList.add("active");
+});
+// فتح الرسالة
+letterGift.addEventListener("click", function () {
+    step4.classList.remove("active");
+    letterPage.classList.add("active");
+});
+
+
+// الرجوع للهدايا
+backToGifts.addEventListener("click", function () {
+    letterPage.classList.remove("active");
+    step4.classList.add("active");
+});
+// فتح الرسالة عند الضغط على الختم
+waxSeal.addEventListener("click", function () {
+    foldedLetter.classList.add("open");
 });
