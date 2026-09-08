@@ -55,6 +55,26 @@
     </span>
 
 </div>
+<label for="giftPhotos">الصور</label>
+
+<div class="photo-upload">
+
+    <label for="giftPhotos" class="upload-btn">
+        📸 اختاري الصور
+    </label>
+
+    <input
+        type="file"
+        id="giftPhotos"
+        accept="image/*"
+        multiple
+    >
+
+    <span id="photoFileName">
+        ما اخترتي صور للحين
+    </span>
+
+</div>
     <button type="button" id="createGiftBtn">
         Create My Gift 🎁
     </button>
@@ -64,14 +84,15 @@
     <p id="previewMessage"></p>
 
     <p id="previewSong"></p>
+    <p id="previewPhotos"></p>
     <button type="button" id="confirmGiftBtn">
     تأكيد وإنشاء الهدية 🎁
 </button>
 </div>
 </form>
     </main>
-    <script src="create.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="create.js"></script>
 </body>
 
 </html>
