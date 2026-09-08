@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Create a Gift</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Changa:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="create-page">
+
+        <h1>Create a Gift 🎁</h1>
+
+        <p>
+            اصنعي هدية خاصة لشخص مميز
+        </p>
+<form class="create-form">
+
+    <label for="recipientName">اسم الشخص</label>
+    <input
+        type="text"
+        id="recipientName"
+        placeholder="مثلاً: شـهد"
+    >
+
+    <label for="giftMessage">الرسالة</label>
+    <textarea
+        id="giftMessage"
+        rows="7"
+        placeholder="اكتبي رسالتك هنا..."
+    ></textarea>
+
+    <label for="giftSong">الأغنية</label>
+    <div class="song-upload">
+
+    <label for="giftSong" class="upload-btn">
+        🎵 اختاري الأغنية
+    </label>
+
+    <input
+        type="file"
+        id="giftSong"
+        accept="audio/*"
+    >
+
+    <span id="songFileName">
+        ما اخترتي أغنية للحين
+    </span>
+
+</div>
+    <button type="button" id="createGiftBtn">
+        Create My Gift 🎁
+    </button>
+<div class="gift-preview" id="giftPreview">
+    <h2 id="previewName"></h2>
+
+    <p id="previewMessage"></p>
+
+    <p id="previewSong"></p>
+    <button type="button" id="confirmGiftBtn">
+    تأكيد وإنشاء الهدية 🎁
+</button>
+</div>
+</form>
+    </main>
+    <script src="create.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</body>
+
+</html>

@@ -23,6 +23,8 @@ const backFromSong = document.getElementById("backFromSong");
 const playSong = document.getElementById("playSong");
 const songAudio = document.getElementById("songAudio");
 const record = document.getElementById("record");
+const  giftSong= document.getElementById("giftSong"); 
+const songFileName = document.getElementById("songFileName");
 let noClicks = 0;
 
 
@@ -110,5 +112,12 @@ playSong.addEventListener("click", function () {
         songAudio.pause();
         record.classList.remove("spinning");
         playSong.textContent = "▶";
+    }
+});
+giftSong.addEventListener("change", function () {
+    if (giftSong.files.length > 0) {
+        songFileName.textContent = "🎵 " + giftSong.files[0].name;
+    } else {
+        songFileName.textContent = "ما اخترتي أغنية للحين";
     }
 });
